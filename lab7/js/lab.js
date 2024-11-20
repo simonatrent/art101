@@ -1,34 +1,29 @@
-// index.js - Arrays and Objects
+// index.js - Functions
 // Author: Simona Trentchev
 // Date: 10/28/24
 
-// Constants
-let myTransportation= ("Subaru","walk","bus","bike");
-let myMainRide = (
-  make: "Subaru",
-  model: "Crosstreck",
-  color: "red",
-  year: 2015,
-  age: function () {
-      return 2024 - this.year;
-  }
-);
+//sortUserName a function that takes user input and sorts the letters
+// of their name
 
-// output
-document.writeln("My Main Ride: <pre>",
-  JSON.stringify(myMainRide, null, '\t'), "</pre>");
-// Functions
+function sortUserName() {
+  var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
+  console.log("userName =", userName);
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+//split string to array
+var nameArray = userName.split('');
+console.log("nameArray") =", name Array)";
+
+//sort the array
+var nameArraySort = nameArray.sort();
+consolog("nameArraySort=", nameArraySort);
+
+//join array back to a string
+var namedSorted = namedArraySort.join('');
+console.log("nameSorted=", nameSorted);
+
+return nameSorted;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+//output
+document.writeln("Oh hey I've fixed your name:
+  sortUserName(), "</br>");
