@@ -17,7 +17,7 @@ $("#button-challenge").click(function(){
 });
 
 // add button to problems section
-$("#problems").append("<button id='button-challenge'>Kurpow</button>");
+$("#problems").append("<button id='button-problems'>Kurpow</button>");
 
 // add a click listener to the problems button
 $("#button-problems").click(function(){
