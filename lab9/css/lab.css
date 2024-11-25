@@ -21,3 +21,17 @@
   color: rgb(141, 113, 242);
   font-weight: bold;
 }
+
+.swoosh {
+  background-color: rgb(65, 208, 244);
+  border: stripes 50px rgb(123, 239, 179);
+  color: rgb(141, 113, 242);
+  font-weight: bold;
+}
+
+.zam {
+  background-color: rgb(65, 208, 244);
+  border: waves 50px rgb(123, 239, 179);
+  color: rgb(141, 113, 242);
+  font-weight: bold;
+}
