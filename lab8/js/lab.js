@@ -2,23 +2,26 @@
 // Author: Simona Trentchev
 // Date: 11/2/24
 
-function Meowww(x){
-  return (x*x);
- 
-}
 
-// test function- 
-console.log("Meowww1", Meowww(1)); 
-console.log("Meowww2", Meowww(2));-
+// Constants
 
-array [10,14,166,39,68]- 
-console.log("My array", array);-
+var numbers = [10,14,166,39,68];
 
-var result = array.map(Meowww);- 
-// should return [100, 196, 27556, 1521, 4624]
+// Functions
 
-console.log("Test of squarness of array:", result);
 
-var result = array.map(function(x){-
- return x * x;-
-})-
+function Meowww(x) { 
+  return x * x;
+ }
+
+// use map on our numbers array 
+
+var MeowwwResult = numbers.map(Meowww);
+console.log("OThe array is: ", numbers);
+console.log("The array squared is: ", MeowwwResult);
+
+// use an anonymous function as a call back with map to do a different operation on numbers array
+
+var additionResult = numbers.map(function(x) (return x + x;});
+
+console.log("The array added with itself is: ", additionResult);
