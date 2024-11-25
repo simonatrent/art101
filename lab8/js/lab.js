@@ -3,7 +3,7 @@
 // Date: 11/2/24
 
 function Meowww(x){
-  var results = x*x
+  results = x*x
   return results;
 }
 
