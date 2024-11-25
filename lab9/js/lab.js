@@ -25,8 +25,8 @@ $("#button-problems").click(function(){
     $("#problems").toggleClass("kurpow");
 });
 
-// add button to refection section
-$("#refection").append("<button id='button-refection'>Swoosh</button>");
+// add button to reflection section
+$("#reflection").append("<button id='button-reflection'>Swoosh</button>");
 
 // add a click listener to the reflection button
 $("#button-reflection").click(function(){
