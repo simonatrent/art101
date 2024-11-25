@@ -23,15 +23,15 @@
 }
 
 .swoosh {
-  background-color: rgb(65, 208, 244);
-  border: stripes 50px rgb(123, 239, 179);
-  color: rgb(141, 113, 242);
+  background-color: rgb(225, 150, 216);
+  border: stripes 50px rgb(236, 28, 255);
+  color: rgb(255, 106, 181);
   font-weight: bold;
 }
 
 .zam {
-  background-color: rgb(65, 208, 244);
-  border: waves 50px rgb(123, 239, 179);
-  color: rgb(141, 113, 242);
+  background-color: rgb(255, 31, 24);
+  border: waves 50px rgb(188, 89, 69);
+  color: rgb(251, 177, 177);
   font-weight: bold;
 }
