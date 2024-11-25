@@ -29,7 +29,7 @@ $("#button-problems").click(function(){
 $("#refection").append("<button id='button-refection'>Swoosh</button>");
 
 // add a click listener to the reflection button
-$("#button-reflectione").click(function(){
+$("#button-reflection").click(function(){
     // now add (or subtract) the "special" class to the section
     $("#reflection").toggleClass("swoosh");
 });
