@@ -5,25 +5,36 @@
 //sortUserName a function that takes user input and sorts the letters
 // of their name
 
-function sortUserName() {
-  var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
-  console.log("userName =", userName);
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fix Your Name</title>
+</head>
+<body>
+  <button onclick="fixUserName()">Fix Your Name</button>
+  <p id="output"></p>
 
-//split string to array
-var nameArray = userName.split('');
-console.log("nameArray") =", name Array)";
+  <script>
+    function fixUserName() {
+      // Prompt user for name
+      var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
+      console.log("userName =", userName);
 
-//sort the array
-var nameArraySort = nameArray.sort();
-consolog("nameArraySort=", nameArraySort);
+      // Split string into an array
+      var nameArray = userName.split('');
+      console.log("nameArray =", nameArray);
 
-//join array back to a string
-var namedSorted = namedArraySort.join('');
-console.log("nameSorted=", nameSorted);
+      // Sort the array
+      var nameArraySort = nameArray.sort();
+      console.log("nameArraySort =", nameArraySort);
 
-return nameSorted;
-}
+      // Join the array back into a string
+      var nameSorted = nameArraySort.join('');
+      console.log("nameSorted =", nameSorted);
 
-//output
-document.writeln("Oh hey I've fixed your name:
-  sortUserName(), "</br>");
+      // Output the sorted name
+      document.getElementById("output").innerHTML = "Oh hey, I've fixed your name: " + nameSorted;
+    }
+  </script>
+</body>
+</html>
