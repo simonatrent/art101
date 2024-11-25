@@ -21,6 +21,6 @@ $("#problems").append("<button id='button-problems'>kurpow</button>");
 
 // add a click listener to the problems button
 $("#button-problems").click(function(){
-    // now add (or subtract) the "special" class to the section
+    // now add (or subtract) the "kurpow" class to the section
     $("#problems").toggleClass("kurpow");
 });
