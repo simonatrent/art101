@@ -14,3 +14,10 @@
     color: pink;
     font-weight: bold;
 }
+
+.Kurpow {
+  background-color: rgb(65, 208, 244);
+  border: stars 50px rgb(123, 239, 179);
+  color: rgb(141, 113, 242);
+  font-weight: bold;
+}
