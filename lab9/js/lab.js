@@ -17,10 +17,10 @@ $("#button-challenge").click(function(){
 });
 
 // add button to problems section
-$("#problems").append("<button id='button-problems'>kurpow</button>");
+$("#problems").append("<button id='button-problems'>Special</button>");
 
 // add a click listener to the problems button
 $("#button-problems").click(function(){
-    // now add (or subtract) the "kurpow" class to the section
-    $("#problems").toggleClass("kurpow");
+    // now add (or subtract) the "special" class to the section
+    $("#problems").toggleClass("special");
 });
