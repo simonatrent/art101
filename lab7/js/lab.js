@@ -5,7 +5,7 @@
 //sortUserName a function that takes user input and sorts the letters
 // of their name
 
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Fix Your Name</title>
