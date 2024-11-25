@@ -22,6 +22,6 @@ console.log("The array squared is: ", MeowwwResult);
 
 // use an anonymous function as a call back with map to do a different operation on numbers array
 
-var additionResult = numbers.map(function(x) (return x + x;});
+var additionResult = numbers.map(function(x) {return x + x;});
 
 console.log("The array added with itself is: ", additionResult);
