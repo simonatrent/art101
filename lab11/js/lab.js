@@ -21,3 +21,5 @@ function sortString(inputString) {
    // Append sorted name to output div
    $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
   });
+}
+main();
