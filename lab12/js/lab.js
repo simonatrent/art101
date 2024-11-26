@@ -9,8 +9,8 @@
 
 
 function sortingHat(str){
- len = str.length;
-     mod = len % 4;
+ var len = str.length;
+    var mod = len % 4;
      if (mod == 0) {
           return "Gryffindor";
    } else if (mod == 1) {
@@ -28,7 +28,7 @@ function sortingHat(str){
    myButton.addEventListener("click", function() {
       var name = document.getElementById("input").value;
       var house = sortingHat(name);
-    newText = "<p>You have officially been sorted into..." + house + "</p>";  
+   var  newText = "<p>You have officially been sorted into..." + house + "</p>";  
     document.getElementById("output").innerHTML = newText;
    });
 
