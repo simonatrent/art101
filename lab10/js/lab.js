@@ -1,44 +1,30 @@
 /*
-   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
+ /*
+   lab.js - This simple JavaScript/jQuery script appends new elements to an output div
 
    Requirements: jQuery must be loaded for this script to work.
 
-   Author:Simona Trentchev
+   Author: Simona Trentchev
    Date: 11/22/24
 */
 
-// add button to challenge section
-$("#challenge").append("<button id='button-challenge'>Special</button>");
+function generateRandomText() {
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const min = 3;
+    const max = 100;
+    const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+    // Get a random starting index to slice the Lorem Ipsum text
+    const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+    // Generate the random Lorem Ipsum-like text
+    return text.slice(randStart, randStart + randLen);
+  }
 
-// add a click listener to the challenge button
-$("#button-challenge").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
+  // click listener for button
+$("#make-convo").click(function(){
 });
 
-// add button to problems section
-$("#problems").append("<button id='button-problems'>Kurpow</button>");
+// get new fake dialogue
+const newText = generateRandomText();
 
-// add a click listener to the problems button
-$("#button-problems").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#problems").toggleClass("kurpow");
-});
-
-// add button to reflection section
-$("#reflection").append("<button id='button-reflection'>Swoosh</button>");
-
-// add a click listener to the reflection button
-$("#button-reflection").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#reflection").toggleClass("swoosh");
-});
-
-// add button to results section
-$("#results").append("<button id='button-results'>Zam</button>");
-
-// add a click listener to the results button
-$("#button-results").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#results").toggleClass("zam");
-});
+// append a new div to our output div
+$("#output").append('<div class="text"><p>' + newText + '</p></div>');
