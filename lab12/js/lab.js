@@ -26,9 +26,9 @@ function sortingHat(str){
    var myButton = document.getElementById("button");
    // assigning a function to myButton
    myButton.addEventListener("click", function() {
-   var name = document.getElementById("input").value;
-   var house = sortingHat(name);
-   newText = "<p>The Sorting Hat has sorted you into " + house + "</p>";  
-   document.getElementById("output").innerHTML = newText;
+      var name = document.getElementById("input").value;
+      var house = sortingHat(name);
+    newText = "<p>You have officially been sorted into..." + house + "</p>";  
+    document.getElementById("output").innerHTML = newText;
    });
 
