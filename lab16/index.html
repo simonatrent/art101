@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 16 - API</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 16 - API</h1>
+			<div class="minor-section"id="challenge">
+					<h2>Challenge</h2>
+					<p>For the longest time I couldn't get the comic to work and then after consulting with peers they said to do this one so I am just doing it for practice.</p>
+			</div>
+
+			<div class="minor-section"id="problems">
+					<h2>Problems</h2>
+					<p>None with the APOD </p>
+			</div>
+
+			<div class="minor-section"id="reflection">
+					<h2>Reflection</h2>
+					<p>I am genuinly trying to learn and get better at coding while being a contributor to our group project, I am sorry for the late work.</p>
+			</div>
+
+			<div class="minor-section"id="results">
+				<div <h2>Results</h2>
+					<div id="output"></div>
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD Viewer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        .apod-entry {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>NASA Astronomy Picture of the Day (APOD)</h1>
+    <button id="fetch-apod">Fetch APOD</button>
+    <div id="output"></div>
+
+    <script>
+        // Function to fetch APOD data
+        function fetchApod() {
+            // Define the API endpoint
+            let endpoint = "https://api.nasa.gov/planetary/apod";
+
+            // Configure the AJAX request
+            let ajaxConfig = {
+                url: endpoint, // API URL
+                method: "GET", // HTTP method
+                contentType: "application/json", // Payload type
+                data: {
+                    api_key: "RS6fF4P1nouqFYsOR9wikuHvxCgsjjOE0U7r3C0J", // API token
+                },
+                success: function(data) { // Success handler
+                    // Create a new section for each response
+                    let newContent = `
+                        <div class="apod-entry">
+                            <h2>${data.title}</h2>
+                            <img src="${data.url}" alt="${data.title}" />
+                            <p>${data.explanation}</p>
+                        </div>
+                    `;
+                    
+                    // Append the new content to the output
+                    $("#output").append(newContent);
+                }, 
+                error: function(xhr, status, error) { // Error handler
+                    console.error(error); 
+                } 
+            };
+
+            // Send the AJAX request
+            $.ajax(ajaxConfig);
+        }
+
+        // Event listener for the button
+        $("#fetch-apod").click(function() {
+            fetchApod();
+        });
+    </script>
+
+</body>
+
+				
+
+				<p></p>
+				<p></p>
+				<div id="image" style="display: none;"></div>
+	
+			</div>
+		</section>
+		<nav id="links">
+			<h2>Labs</h2>
+			<ul>
+				<li><a href="index.html">homepage</a></li>
+				<li><a href="lab2/index.html">Lab 2</a></li>
+				<li><a href="lab3/index.html">Lab 3</a></li>
+				<li><a href="lab4/index.html">Lab 4</a></li>
+				<li><a href="lab5/index.html">Lab 5</a></li>
+				<li><a href="lab6/index.html">Lab 6</a></li>
+				<li><a href="lab7/index.html">Lab 7</a></li>
+				<li><a href="lab8/index.html">Lab 8</a></li>
+				<li><a href="lab9/index.html">Lab 9</a></li>
+				<li><a href="lab10/index.html">Lab 10</a></li>
+				<li><a href="lab10/index.html">Lab 11</a></li>
+				<li><a href="lab10/index.html">Lab 12</a></li>
+				<li><a href="lab10/index.html">Lab 13</a></li>
+				<li><a href="lab10/index.html">Lab 14</a></li>
+
+			</ul>
+		</nav>
+	</main>
+</body>
+</html>
